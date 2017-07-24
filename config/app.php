@@ -12,7 +12,8 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+//    'name' => env('APP_NAME', 'Laravel'),
+    'name' => 'Classified Ads',
 
     /*
     |--------------------------------------------------------------------------
@@ -167,6 +168,8 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
+        App\Providers\ComposerServiceProvider::class,
 
         /*
          * Application Service Providers...
